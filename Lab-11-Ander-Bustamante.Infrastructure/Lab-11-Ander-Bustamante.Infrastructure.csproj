@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <RootNamespace>Lab_11_Ander_Bustamante.Infrastructure</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Lab-11-Ander-Bustamante.Domain\Lab-11-Ander-Bustamante.Domain.csproj" />
+        <ProjectReference Include="..\Lab-11-Ander-Bustamante.Application\Lab-11-Ander-Bustamante.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.13" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.13" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.13">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.13">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.23.0" />
+    </ItemGroup>
+
+</Project>
